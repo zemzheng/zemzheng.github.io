@@ -14,10 +14,9 @@ fi
 
 git checkout master
 gitbook build _src _output
-cp _output/** .
+cp _output/* . -r
 
 if [ `git status -sb | sed '1d' | wc -l` -gt 0 ]; then
-    exit
     git add -A
     git commit -m "build @[`date +'%Y-%m-%d %H:%M:%S'`]"
 fi
