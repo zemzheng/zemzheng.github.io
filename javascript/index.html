@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>date | Ziey</title>
+        <title>javascript | Ziey</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.3">
@@ -29,10 +29,10 @@
         
     
     
-    <link rel="next" href="../vim/index.html" />
+    <link rel="next" href="../javascript/functions/index.html" />
     
     
-    <link rel="prev" href="../shell/echo.html" />
+    <link rel="prev" href="../index.html" />
     
 
         
@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="Thu Dec 03 2015 15:26:21 GMT+0800 (中国标准时间)">
+    <div class="book" data-level="1" data-basepath=".." data-revision="Thu Dec 03 2015 15:26:21 GMT+0800 (中国标准时间)">
     
 
 <div class="book-summary">
@@ -71,7 +71,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1" data-path="javascript/index.html">
+        <li class="chapter active" data-level="1" data-path="javascript/index.html">
             
                 
                     <a href="../javascript/index.html">
@@ -174,7 +174,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="shell/date.html">
+        <li class="chapter " data-level="2.2" data-path="shell/date.html">
             
                 
                     <a href="../shell/date.html">
@@ -402,157 +402,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="date">date</h1>
-<h2 id="%E8%BE%93%E5%87%BA%E6%8C%87%E5%AE%9A%E7%9A%84%E6%A0%BC%E5%BC%8F">&#x8F93;&#x51FA;&#x6307;&#x5B9A;&#x7684;&#x683C;&#x5F0F;</h2>
-<h3 id="example">Example</h3>
-<pre><code>date +&apos;%s&apos;
-</code></pre><h3 id="%E5%8F%AF%E7%94%A8%E5%88%97%E8%A1%A8">&#x53EF;&#x7528;&#x5217;&#x8868;</h3>
-<table>
-<thead>
-<tr>
-<th>&#x683C;&#x5F0F;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>%%</td>
-<td>a literal %</td>
-</tr>
-<tr>
-<td>%a</td>
-<td>locale&apos;s abbreviated weekday name (Sun..Sat)</td>
-</tr>
-<tr>
-<td>%A</td>
-<td>locale&apos;s full weekday name, variable length (Sunday..Saturday)</td>
-</tr>
-<tr>
-<td>%b</td>
-<td>locale&apos;s abbreviated month name (Jan..Dec)</td>
-</tr>
-<tr>
-<td>%B</td>
-<td>locale&apos;s full month name, variable length (January..December)</td>
-</tr>
-<tr>
-<td>%c</td>
-<td>locale&apos;s date and time (Sat Nov 04 12:02:33 EST 1989)</td>
-</tr>
-<tr>
-<td>%d</td>
-<td>day of month (01..31)</td>
-</tr>
-<tr>
-<td>%D</td>
-<td>date (mm/dd/yy)</td>
-</tr>
-<tr>
-<td>%e</td>
-<td>day of month, blank padded ( 1..31)</td>
-</tr>
-<tr>
-<td>%h</td>
-<td>same as %b</td>
-</tr>
-<tr>
-<td>%H</td>
-<td>hour (00..23)</td>
-</tr>
-<tr>
-<td>%I</td>
-<td>hour (01..12)</td>
-</tr>
-<tr>
-<td>%j</td>
-<td>day of year (001..366)</td>
-</tr>
-<tr>
-<td>%k</td>
-<td>hour ( 0..23)</td>
-</tr>
-<tr>
-<td>%l</td>
-<td>hour ( 1..12)</td>
-</tr>
-<tr>
-<td>%m</td>
-<td>month (01..12)</td>
-</tr>
-<tr>
-<td>%M</td>
-<td>minute (00..59)</td>
-</tr>
-<tr>
-<td>%n</td>
-<td>a newline</td>
-</tr>
-<tr>
-<td>%p</td>
-<td>locale&apos;s AM or PM</td>
-</tr>
-<tr>
-<td>%r</td>
-<td>time, 12-hour (hh:mm:ss [AP]M)</td>
-</tr>
-<tr>
-<td>%s</td>
-<td>seconds since 00:00:00, Jan 1, 1970 (a GNU extension)</td>
-</tr>
-<tr>
-<td>%S</td>
-<td>second (00..60)</td>
-</tr>
-<tr>
-<td>%t</td>
-<td>a horizontal tab</td>
-</tr>
-<tr>
-<td>%T</td>
-<td>time, 24-hour (hh:mm:ss)</td>
-</tr>
-<tr>
-<td>%U</td>
-<td>week number of year with Sunday as first day of week (00..53)</td>
-</tr>
-<tr>
-<td>%V</td>
-<td>week number of year with Monday as first day of week (01..52)</td>
-</tr>
-<tr>
-<td>%w</td>
-<td>day of week (0..6);  0 represents Sunday</td>
-</tr>
-<tr>
-<td>%W</td>
-<td>week number of year with Monday as first day of week (00..53)</td>
-</tr>
-<tr>
-<td>%x</td>
-<td>locale&apos;s date representation (mm/dd/yy)</td>
-</tr>
-<tr>
-<td>%X</td>
-<td>locale&apos;s time representation (%H:%M:%S)</td>
-</tr>
-<tr>
-<td>%y</td>
-<td>last two digits of year (00..99)</td>
-</tr>
-<tr>
-<td>%Y</td>
-<td>year (1970...)</td>
-</tr>
-<tr>
-<td>%z</td>
-<td>RFC-822 style numeric timezone (-0500) (a nonstandard extension)</td>
-</tr>
-<tr>
-<td>%Z</td>
-<td>time zone (e.g., EDT), or nothing if no time zone is determinable</td>
-</tr>
-</tbody>
-</table>
+                        <h1 id="javascript">JavaScript</h1>
 
                     
                     </section>
@@ -563,10 +413,10 @@
         </div>
 
         
-        <a href="../shell/echo.html" class="navigation navigation-prev " aria-label="Previous page: echo"><i class="fa fa-angle-left"></i></a>
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../vim/index.html" class="navigation navigation-next " aria-label="Next page: vim"><i class="fa fa-angle-right"></i></a>
+        <a href="../javascript/functions/index.html" class="navigation navigation-next " aria-label="Next page: functions"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
