@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>string | Ziey</title>
+        <title>react | Ziey</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../../javascript/functions/image.html" />
+    <link rel="next" href="../../javascript/react/babel.html" />
     
     
-    <link rel="prev" href="../../javascript/functions/index.html" />
+    <link rel="prev" href="../../javascript/functions/other.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="1.1.1"
-        data-chapter-title="string"
-        data-filepath="javascript/functions/string.md"
+        data-level="1.2"
+        data-chapter-title="react"
+        data-filepath="javascript/react/README.md"
         data-basepath="../.."
         data-revision="Thu Mar 10 2016 00:09:05 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -114,7 +114,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1.1" data-path="javascript/functions/string.html">
+        <li class="chapter " data-level="1.1.1" data-path="javascript/functions/string.html">
             
                 
                     <a href="../../javascript/functions/string.html">
@@ -164,7 +164,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="javascript/react/index.html">
+        <li class="chapter active" data-level="1.2" data-path="javascript/react/index.html">
             
                 
                     <a href="../../javascript/react/index.html">
@@ -427,45 +427,8 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="javascript--function--string">Javascript - Function - String</h1>
-<h2 id="&#x6570;&#x5B57;&#x5343;&#x5206;&#x4F4D;&#x9017;&#x53F7;">&#x6570;&#x5B57;&#x5343;&#x5206;&#x4F4D;&#x9017;&#x53F7;</h2>
-<pre><code>function ( s, len ){
+                        <h1 id="react">React</h1>
 
-    s = (function( len ){ 
-            return ~~( s * len ) / len + &apos;&apos;
-    })( Math.pow( 10, len = len || 2 ) );
-
-    s = s.split( &apos;.&apos; );
-    if( s.length &lt; 2 ) s.push( &apos;&apos; );
-    while( s[1].length &lt; len ) s[1] += &apos;0&apos;;
-
-    var re = /(\d)(\d{3}[\.,])/;
-    s[0] += &apos;.&apos;;
-    while( re.test( s[0] ) ) s[0] = s[0].replace( re, &quot;$1,$2&quot; );
-
-    return s.join( &apos;&apos; );
-}
-</code></pre><h2 id="&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#x5316;">&#x65F6;&#x95F4;&#x683C;&#x5F0F;&#x5316;</h2>
-<pre><code>function( time, format ){
-    format = format || &apos;%Y &#x5E74; %m &#x6708; %d &#x65E5;&apos;;
-    var d = new Date( time * 1000 );
-    return format
-        .replace( /%Y/g, d.getFullYear()  )
-        .replace( /%m/g, d.getMonth() + 1 )
-        .replace( /%d/g, d.getDate()      )
-        .replace( /%H/g, d.getHours()     )
-        .replace( /%i/g, d.getMinutes()   )
-        .replace( /%s/g, d.getSeconds()   )
-}
-</code></pre><h2 id="&#x5B57;&#x7B26;&#x4E32;&#x8865;&#x5168;">&#x5B57;&#x7B26;&#x4E32;&#x8865;&#x5168;</h2>
-<pre><code>function( str, len, fill ){
-    fill = fill || 0;
-    while( str.length &lt; len ){
-        str = fill + str;
-    }
-    return str;
-}
-</code></pre>
                     
                     </section>
                 
@@ -475,10 +438,10 @@
         </div>
 
         
-        <a href="../../javascript/functions/index.html" class="navigation navigation-prev " aria-label="Previous page: functions"><i class="fa fa-angle-left"></i></a>
+        <a href="../../javascript/functions/other.html" class="navigation navigation-prev " aria-label="Previous page: other"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../javascript/functions/image.html" class="navigation navigation-next " aria-label="Next page: image"><i class="fa fa-angle-right"></i></a>
+        <a href="../../javascript/react/babel.html" class="navigation navigation-next " aria-label="Next page: babel"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

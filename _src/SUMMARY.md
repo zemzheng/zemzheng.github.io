@@ -7,6 +7,8 @@ Step by Step
         * [string](javascript/functions/string.md)
         * [image](javascript/functions/image.md)
         * [other](javascript/functions/other.md)
+    * [react](javascript/react/README.md)
+        * [babel](javascript/react/babel.md)
 * [shell](shell/README.md)
     * [echo](shell/echo.md)
     * [date](shell/date.md)
