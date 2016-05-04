@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ziey</title>
+  <subtitle>Web FrontEnd</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://zemzheng.ziey.info/"/>
+  <updated>2016-05-04T06:13:15.973Z</updated>
+  <id>http://zemzheng.ziey.info/</id>
+  
+  <author>
+    <name>Zem Zheng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vim 相关指导资料收集</title>
+    <link href="http://zemzheng.ziey.info/2016/05/04/vim-guide/"/>
+    <id>http://zemzheng.ziey.info/2016/05/04/vim-guide/</id>
+    <published>2016-05-04T06:10:18.000Z</published>
+    <updated>2016-05-04T06:13:15.973Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Vim 相关资料&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/cn/linux/l-vim-script-1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用脚本编写 Vim 编辑器，第 1 部分: 变量、值和表达式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.ibm.com/developerworks/cn/linux/l-vim-script-2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用脚本编写 Vim 编辑器，第 2 部分: 用户定义函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.ibm.com/developerworks/cn/linux/l-vim-script-3/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用脚本编写 Vim 编辑器，第 3 部分: 内置列表&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.ibm.com/developerworks/cn/linux/l-vim-script-4/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用脚本编写 Vim 编辑器，第 4 部分: 字典&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.ibm.com/developerworks/cn/linux/l-vim-script-5/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用脚本编写 Vim 编辑器，第 5 部分: 事件驱动的脚本编写和自动化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://learnvimscriptthehardway.stevelosh.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Learn Vimscript the Hard Way&lt;/a&gt; &lt;a href=&quot;http://learnvimscriptthehardway.onefloweroneworld.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;翻译&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;推荐插件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tpope/vim-pathogen.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;vim-pathogen&lt;/a&gt; 插件管理工具，配置完成后把插件下载到定义好的目录即可&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mattn/emmet-vim.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;emmet-vim&lt;/a&gt; HTML 快捷生成工具，顺便还可以定义自己的快捷语法，曾经的 Zen-Coding&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/godlygeek/tabular.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;tabular&lt;/a&gt; 对齐工具，洁癖患者福音&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vim-scripts/jshint.vim.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;jshint.vim&lt;/a&gt; js 代码检查工具&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/bling/vim-airline.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;vim-airline&lt;/a&gt; 分割窗口后提供底部小标识，方便查看&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kchmck/vim-coffee-script.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;vim-coffee-script&lt;/a&gt; coffeescript 的 vim 语法高亮&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/groenewege/vim-less.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;vim-less&lt;/a&gt; less css 的语法高亮&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我的 gVim 设置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/zemzheng/_setting&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;_vimrc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Vim 相关资料&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/cn/linux/l-vim-script-1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用脚本编写
+    
+    </summary>
+    
+    
+      <category term="vim" scheme="http://zemzheng.ziey.info/tags/vim/"/>
+    
+      <category term="gvim" scheme="http://zemzheng.ziey.info/tags/gvim/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git cookbook</title>
+    <link href="http://zemzheng.ziey.info/2016/05/04/git-cookbook/"/>
+    <id>http://zemzheng.ziey.info/2016/05/04/git-cookbook/</id>
+    <published>2016-05-04T05:55:32.000Z</published>
+    <updated>2016-05-04T06:00:37.213Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;更新本地代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git fetch -p&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git pull origin [branch]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;获取远程分支的信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git remote show origin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;拉分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout -b feature.desc.160305 &lt;span class=&quot;comment&quot;&gt;# 以当前分支为基础，拉出分支feature.desc.160305&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git checkout -b [branch] [remotename]/[branch] &lt;span class=&quot;comment&quot;&gt;# 远程拉取分支并本地跟踪&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;分支信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git branch -vv &lt;span class=&quot;comment&quot;&gt;# 显示各分支信息&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;删除远程分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git push origin --delete [branch]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;推送分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git push origin head &lt;span class=&quot;comment&quot;&gt;# 目前后台使用该命令会出错&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git push origin &lt;span class=&quot;variable&quot;&gt;$branch&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;# 后台使用的版本支持&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;如果出现失败，可以尝试先pull&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git pull origin [branch]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;打tag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git tag 20160305&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git push origin [tag]   &lt;span class=&quot;comment&quot;&gt;# push tag到远端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;对比差异&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git diff    &lt;span class=&quot;comment&quot;&gt;# 显示还未暂存的改动&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git diff --staged &lt;span class=&quot;comment&quot;&gt;# 显示当前和上次提交之间的差异&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git diff master --name-only -- xxx &lt;span class=&quot;comment&quot;&gt;# 当前分支和master对比xxx目录下的有差异文件列表，注意参数顺序&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git diff 20160229 --name-only &lt;span class=&quot;comment&quot;&gt;# 当前分支与tag 20160229 进行对比&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git diff head head^ --name-only --diff-filter=AM &lt;span class=&quot;comment&quot;&gt;# 列出两个提交点的新增及修改文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;拿到当前的 hash 值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;log&lt;/span&gt; --pretty=%H -n 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;git 配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git config --global &lt;span class=&quot;_&quot;&gt;-l&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config --global --add user.name yourname&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config --global --unset user.name &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 命令中带了--global参数，这就意味是在进行全局配置,它会影响本机上的每个一个Git项目.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Git的全局配置文件是存放在~/.gitconfig（用户目录下的.gitconfig）文件中,项目配置文件是存放在Git项目所在目录的.git/config文件中,可自由添加&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;git 回滚 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 场景1:当你改乱了工作区某个文件的内容,想直接丢弃工作区的修改时,用命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git checkout -- file.  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 场景2:当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 第一步用命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git reset HEAD file &lt;span class=&quot;comment&quot;&gt;# 回到了场景1，第二步按场景1操作 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 场景3:已经提交了不合适的修改到版本库时，想要撤销本次提交，不过前提是没有推送到远程库。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# HEAD指向的版本就是当前版本，因此，Git允许在版本的历史之间穿梭，使用命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git reset --hard commit_id &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 向前回滚,用git log可以查看提交历史，以便确定要回退到哪个版本。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 向后用git reflog查看命令历史，以便确定要回到未来的哪个版本。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;打一个更新包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;branch=&lt;span class=&quot;string&quot;&gt;&quot;master&quot;&lt;/span&gt;                                              &lt;span class=&quot;comment&quot;&gt;# 要打包的分支 master 或者 develop&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;to=&lt;span class=&quot;string&quot;&gt;&quot;head&quot;&lt;/span&gt;                                                    &lt;span class=&quot;comment&quot;&gt;# 更新到目标点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;from=&lt;span class=&quot;string&quot;&gt;&quot;head^&quot;&lt;/span&gt;                                                 &lt;span class=&quot;comment&quot;&gt;# 上一个更新点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git checkout &lt;span class=&quot;variable&quot;&gt;$branch&lt;/span&gt;                                         &lt;span class=&quot;comment&quot;&gt;# master 或者 release&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pkg=&lt;span class=&quot;string&quot;&gt;&quot;/data/release/cms-&lt;span class=&quot;variable&quot;&gt;$&amp;#123;branch&amp;#125;&lt;/span&gt;-&lt;span class=&quot;variable&quot;&gt;$( date +&quot;%Y%m%d-%s&quot; )&lt;/span&gt;.tgz&quot;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;# 更新包名称&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git checkout &lt;span class=&quot;variable&quot;&gt;$targetBranch&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; f &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; $( git diff &lt;span class=&quot;variable&quot;&gt;$fromBranch&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$targetBranch&lt;/span&gt; --name-only --diff-filter=AM ); &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    tar -rzf &lt;span class=&quot;variable&quot;&gt;$pkg&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$f&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;done&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git checkout -&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;更新本地代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;
+    
+    </summary>
+    
+    
+      <category term="cookbook" scheme="http://zemzheng.ziey.info/tags/cookbook/"/>
+    
+      <category term="git" scheme="http://zemzheng.ziey.info/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shell cookbook</title>
+    <link href="http://zemzheng.ziey.info/2016/05/04/shell-cookbook/"/>
+    <id>http://zemzheng.ziey.info/2016/05/04/shell-cookbook/</id>
+    <published>2016-05-04T05:50:09.000Z</published>
+    <updated>2016-05-04T05:53:22.962Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;等待输入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 让用户输入一个字符来表示是否进行某个操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# http://stackoverflow.com/questions/1885525/how-do-i-prompt-a-user-for-confirmation-in-bash-script&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;read&lt;/span&gt; -p &lt;span class=&quot;string&quot;&gt;&quot;Are you sure? &quot;&lt;/span&gt; -n 1 -r&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -n &amp;lt;num&amp;gt; 可以输入多少字符&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt;    &lt;span class=&quot;comment&quot;&gt;# (optional) move to a new line&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; [[ &lt;span class=&quot;variable&quot;&gt;$REPLY&lt;/span&gt; =~ ^[Yy]$ ]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;# do something you confirm&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;echo 输出颜色&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 设置接下来的输出颜色&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;_&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;\033[&amp;lt;F&amp;gt;;&amp;lt;B&amp;gt;m&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;_&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;\e[&amp;lt;F&amp;gt;;&amp;lt;B&amp;gt;m&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# \033[&amp;lt;F&amp;gt;;&amp;lt;B&amp;gt;m&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# \e[&amp;lt;F&amp;gt;;&amp;lt;B&amp;gt;m&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# &amp;lt;F&amp;gt; 文字颜色&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# &amp;lt;B&amp;gt; 背景颜色&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&amp;lt;F&amp;gt;&lt;/th&gt;
+&lt;th&gt;&amp;lt;B&amp;gt;&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;40&lt;/td&gt;
+&lt;td&gt;黑色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;31&lt;/td&gt;
+&lt;td&gt;41&lt;/td&gt;
+&lt;td&gt;红色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;32&lt;/td&gt;
+&lt;td&gt;42&lt;/td&gt;
+&lt;td&gt;绿色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;33&lt;/td&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;td&gt;黄色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;34&lt;/td&gt;
+&lt;td&gt;44&lt;/td&gt;
+&lt;td&gt;蓝色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;紫红色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;36&lt;/td&gt;
+&lt;td&gt;46&lt;/td&gt;
+&lt;td&gt;青蓝色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;37&lt;/td&gt;
+&lt;td&gt;47&lt;/td&gt;
+&lt;td&gt;白色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;date 输出指定的格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;date +&lt;span class=&quot;string&quot;&gt;&#39;%s&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;格式&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;%%&lt;/td&gt;
+&lt;td&gt;a literal %&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%a&lt;/td&gt;
+&lt;td&gt;locale’s abbreviated weekday name (Sun..Sat)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%A&lt;/td&gt;
+&lt;td&gt;locale’s full weekday name, variable length (Sunday..Saturday)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%b&lt;/td&gt;
+&lt;td&gt;locale’s abbreviated month name (Jan..Dec)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%B&lt;/td&gt;
+&lt;td&gt;locale’s full month name, variable length (January..December)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%c&lt;/td&gt;
+&lt;td&gt;locale’s date and time (Sat Nov 04 12:02:33 EST 1989)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%d&lt;/td&gt;
+&lt;td&gt;day of month (01..31)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%D&lt;/td&gt;
+&lt;td&gt;date (mm/dd/yy)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%e&lt;/td&gt;
+&lt;td&gt;day of month, blank padded ( 1..31)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%h&lt;/td&gt;
+&lt;td&gt;same as %b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%H&lt;/td&gt;
+&lt;td&gt;hour (00..23)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%I&lt;/td&gt;
+&lt;td&gt;hour (01..12)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%j&lt;/td&gt;
+&lt;td&gt;day of year (001..366)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%k&lt;/td&gt;
+&lt;td&gt;hour ( 0..23)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%l&lt;/td&gt;
+&lt;td&gt;hour ( 1..12)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%m&lt;/td&gt;
+&lt;td&gt;month (01..12)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%M&lt;/td&gt;
+&lt;td&gt;minute (00..59)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%n&lt;/td&gt;
+&lt;td&gt;a newline&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%p&lt;/td&gt;
+&lt;td&gt;locale’s AM or PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%r&lt;/td&gt;
+&lt;td&gt;time, 12-hour (hh:mm:ss [AP]M)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%s&lt;/td&gt;
+&lt;td&gt;seconds since 00:00:00, Jan 1, 1970 (a GNU extension)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%S&lt;/td&gt;
+&lt;td&gt;second (00..60)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%t&lt;/td&gt;
+&lt;td&gt;a horizontal tab&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%T&lt;/td&gt;
+&lt;td&gt;time, 24-hour (hh:mm:ss)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%U&lt;/td&gt;
+&lt;td&gt;week number of year with Sunday as first day of week (00..53)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%V&lt;/td&gt;
+&lt;td&gt;week number of year with Monday as first day of week (01..52)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%w&lt;/td&gt;
+&lt;td&gt;day of week (0..6);  0 represents Sunday&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%W&lt;/td&gt;
+&lt;td&gt;week number of year with Monday as first day of week (00..53)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%x&lt;/td&gt;
+&lt;td&gt;locale’s date representation (mm/dd/yy)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%X&lt;/td&gt;
+&lt;td&gt;locale’s time representation (%H:%M:%S)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%y&lt;/td&gt;
+&lt;td&gt;last two digits of year (00..99)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%Y&lt;/td&gt;
+&lt;td&gt;year (1970…)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%z&lt;/td&gt;
+&lt;td&gt;RFC-822 style numeric timezone (-0500) (a nonstandard extension)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%Z&lt;/td&gt;
+&lt;td&gt;time zone (e.g., EDT), or nothing if no time zone is determinable&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;等待输入&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2
+    
+    </summary>
+    
+    
+      <category term="cookbook" scheme="http://zemzheng.ziey.info/tags/cookbook/"/>
+    
+      <category term="shell" scheme="http://zemzheng.ziey.info/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何配置 Babel 6.x</title>
+    <link href="http://zemzheng.ziey.info/2016/05/04/how-to-config-babel6.x/"/>
+    <id>http://zemzheng.ziey.info/2016/05/04/how-to-config-babel6.x/</id>
+    <published>2016-05-04T05:45:44.000Z</published>
+    <updated>2016-05-04T05:47:37.955Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;Babel&quot;&gt;&lt;a href=&quot;#Babel&quot; class=&quot;headerlink&quot; title=&quot;Babel&quot;&gt;&lt;/a&gt;Babel&lt;/h1&gt;&lt;p&gt;我们使用 &lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Babel&lt;/a&gt; 来将 ES6/7 或者 React 的语法编译成当前浏览器可以执行的代码&lt;/p&gt;
+&lt;h2 id=&quot;Preset-and-Plugin&quot;&gt;&lt;a href=&quot;#Preset-and-Plugin&quot; class=&quot;headerlink&quot; title=&quot;Preset and Plugin&quot;&gt;&lt;/a&gt;Preset and Plugin&lt;/h2&gt;&lt;p&gt;Babel 将各种语法特性的编译放在 Plugin 的中处理&lt;/p&gt;
+&lt;p&gt;如 React 我们就能找到下面这些 Plugin：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;react-constant-elements&lt;/li&gt;
+&lt;li&gt;react-display-name&lt;/li&gt;
+&lt;li&gt;react-inline-elements&lt;/li&gt;
+&lt;li&gt;react-jsx&lt;/li&gt;
+&lt;li&gt;react-jsx-compat&lt;/li&gt;
+&lt;li&gt;react-jsx-source&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Babel 官方给我们提供了一些 Preset，也就是常用的 Plugin 的组合，比如 preset-react&lt;/p&gt;
+&lt;h2 id=&quot;安装注意&quot;&gt;&lt;a href=&quot;#安装注意&quot; class=&quot;headerlink&quot; title=&quot;安装注意&quot;&gt;&lt;/a&gt;安装注意&lt;/h2&gt;&lt;p&gt;grunt / gulp / webpack / cli 等各种工具都能在 Babel 的官网上找到集成配置方案。&lt;/p&gt;
+&lt;p&gt;需要注意的是 Babel 5 和 Babel 6 的配置是不一样的，升级的时候需要特别注意。&lt;/p&gt;
+&lt;p&gt;我所在的项目需要支持 React + ES 6/7 支持，因此会带上 preset-es2015, preset-stage-0, preset-react:&lt;br&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# npm install babel-preset-stage-0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# npm install babel-preset-react&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# npm install babel-preset-es2015&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// 参数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123; &lt;span class=&quot;string&quot;&gt;&quot;presets&quot;&lt;/span&gt;: [&lt;span class=&quot;string&quot;&gt;&quot;stage-0&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;es2015&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;react&quot;&lt;/span&gt; ] &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Babel&quot;&gt;&lt;a href=&quot;#Babel&quot; class=&quot;headerlink&quot; title=&quot;Babel&quot;&gt;&lt;/a&gt;Babel&lt;/h1&gt;&lt;p&gt;我们使用 &lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;ex
+    
+    </summary>
+    
+    
+      <category term="react" scheme="http://zemzheng.ziey.info/tags/react/"/>
+    
+      <category term="babel" scheme="http://zemzheng.ziey.info/tags/babel/"/>
+    
+      <category term="config" scheme="http://zemzheng.ziey.info/tags/config/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript - cookbook</title>
+    <link href="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/"/>
+    <id>http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/</id>
+    <published>2016-05-04T05:29:41.000Z</published>
+    <updated>2016-05-04T05:43:28.120Z</updated>
+    
+    <content type="html">&lt;p&gt;# &lt;/p&gt;
+&lt;h1 id=&quot;String&quot;&gt;&lt;a href=&quot;#String&quot; class=&quot;headerlink&quot; title=&quot;String&quot;&gt;&lt;/a&gt;String&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;数字千分位逗号&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt; s, len &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    s = (&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; len &lt;/span&gt;)&lt;/span&gt;&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ~~( s * len ) / len + &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;)( &lt;span class=&quot;built_in&quot;&gt;Math&lt;/span&gt;.pow( &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, len = len || &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ) );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    s = s.split( &lt;span class=&quot;string&quot;&gt;&#39;.&#39;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;( s.length &amp;lt; &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ) s.push( &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( s[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;].length &amp;lt; len ) s[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] += &lt;span class=&quot;string&quot;&gt;&#39;0&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; re = &lt;span class=&quot;regexp&quot;&gt;/(\d)(\d&amp;#123;3&amp;#125;[\.,])/&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    s[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] += &lt;span class=&quot;string&quot;&gt;&#39;.&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( re.test( s[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] ) ) s[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = s[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;].replace( re, &lt;span class=&quot;string&quot;&gt;&quot;$1,$2&quot;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; s.join( &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;时间格式化&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; time, format &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    format = format || &lt;span class=&quot;string&quot;&gt;&#39;%Y 年 %m 月 %d 日&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; d = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Date&lt;/span&gt;( time * &lt;span class=&quot;number&quot;&gt;1000&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; format&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .replace( &lt;span class=&quot;regexp&quot;&gt;/%Y/g&lt;/span&gt;, d.getFullYear()  )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .replace( &lt;span class=&quot;regexp&quot;&gt;/%m/g&lt;/span&gt;, d.getMonth() + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .replace( &lt;span class=&quot;regexp&quot;&gt;/%d/g&lt;/span&gt;, d.getDate()      )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .replace( &lt;span class=&quot;regexp&quot;&gt;/%H/g&lt;/span&gt;, d.getHours()     )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .replace( &lt;span class=&quot;regexp&quot;&gt;/%i/g&lt;/span&gt;, d.getMinutes()   )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        .replace( &lt;span class=&quot;regexp&quot;&gt;/%s/g&lt;/span&gt;, d.getSeconds()   )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;字符串补全&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; str, len, fill &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    fill = fill || &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( str.length &amp;lt; len )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        str = fill + str;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; str;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;Image&quot;&gt;&lt;a href=&quot;#Image&quot; class=&quot;headerlink&quot; title=&quot;Image&quot;&gt;&lt;/a&gt;Image&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;image 转 data-url&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 浏览器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;image2dataurl&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; img &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; c = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.createElement(&lt;span class=&quot;string&quot;&gt;&quot;canvas&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    c.width  = img.width;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    c.height = img.height;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    c.getContext(&lt;span class=&quot;string&quot;&gt;&quot;2d&quot;&lt;/span&gt;).drawImage( img, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; c.toDataURL();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 使用方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; dataurl = image2dataurl( img );&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;url 转 data-url&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 浏览器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 调用本页的 image2dataurl 方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;url2dataurl&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; url &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Promise&lt;/span&gt;( &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; resolve, reject &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Image();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        i.onload = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            resolve( image2dataurl( i ) );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        i.onerror = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; e &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            reject( e );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        i.src = url;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 使用方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; dataurl;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;url2dataurl( &lt;span class=&quot;string&quot;&gt;&#39;http://to-your-image&#39;&lt;/span&gt; ).then(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; _dataurl &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    dataurl = _dataurl;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;# &lt;/p&gt;
+&lt;h1 id=&quot;String&quot;&gt;&lt;a href=&quot;#String&quot; class=&quot;headerlink&quot; title=&quot;String&quot;&gt;&lt;/a&gt;String&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;数字千分位逗号&lt;/p&gt;
+&lt;figure class=&quot;highligh
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://zemzheng.ziey.info/tags/javascript/"/>
+    
+      <category term="cookbook" scheme="http://zemzheng.ziey.info/tags/cookbook/"/>
+    
+  </entry>
+  
+</feed>
