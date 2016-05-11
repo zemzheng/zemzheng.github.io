@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>通过经验值来计算和显示level条 | Ziey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="早上跟 ch哥 在班车上闲聊，说到在游戏里面，如何根据一个经验值，显示当前用户的等级 Level，并且显示当前 Level 下距离下一级别的进度百分比。
+ch哥 说要是让你做，怎么搞？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通过经验值来计算和显示level条">
+<meta property="og:url" content="http://zemzheng.ziey.info/2016/05/11/calculate-level-experience-and-show/index.html">
+<meta property="og:site_name" content="Ziey">
+<meta property="og:description" content="早上跟 ch哥 在班车上闲聊，说到在游戏里面，如何根据一个经验值，显示当前用户的等级 Level，并且显示当前 Level 下距离下一级别的进度百分比。
+ch哥 说要是让你做，怎么搞？">
+<meta property="og:updated_time" content="2016-05-11T16:12:20.220Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="通过经验值来计算和显示level条">
+<meta name="twitter:description" content="早上跟 ch哥 在班车上闲聊，说到在游戏里面，如何根据一个经验值，显示当前用户的等级 Level，并且显示当前 Level 下距离下一级别的进度百分比。
+ch哥 说要是让你做，怎么搞？">
+  
+    <link rel="alternate" href="/atom.xml" title="Ziey" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Ziey</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Web FrontEnd</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://zemzheng.ziey.info"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-calculate-level-experience-and-show" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/11/calculate-level-experience-and-show/" class="article-date">
+  <time datetime="2016-05-11T05:51:03.000Z" itemprop="datePublished">2016-05-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      通过经验值来计算和显示level条
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>早上跟 ch哥 在班车上闲聊，说到在游戏里面，如何根据一个经验值，显示当前用户的等级 Level，并且显示当前 Level 下距离下一级别的进度百分比。</p>
+<p>ch哥 说要是让你做，怎么搞？</p>
+<a id="more"></a> 
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">exp2level</span>(<span class="params"> exp </span>)</span>&#123; <span class="comment">// 得到 exp 对应的 level</span></span><br><span class="line">    <span class="comment">/* ... */</span> </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">level2expRange</span>(<span class="params"> level </span>)</span>&#123; <span class="comment">// 拿到这个 level 的 exp 范围</span></span><br><span class="line">    <span class="comment">/* ... */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">exp2width</span>(<span class="params"> exp </span>)</span>&#123; <span class="comment">// 根据 exp 拿到 Level 进度条宽度百分比</span></span><br><span class="line">    <span class="keyword">let</span> width;</span><br><span class="line">    <span class="keyword">let</span> expRange = level2expRange( exp );</span><br><span class="line">    <span class="keyword">if</span>( expRange[ <span class="number">0</span> ] == expRange[ <span class="number">1</span> ] )&#123;</span><br><span class="line">        width = <span class="number">0</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        width = ( exp - expRange[ <span class="number">0</span> ] ) / ( expRange[ <span class="number">1</span> ] - expRange[ <span class="number">0</span> ] );</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> width;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 所以当 exp 已知，有：</span></span><br><span class="line"><span class="keyword">let</span> level = exp2level( exp );</span><br><span class="line"><span class="keyword">let</span> width = exp2width( exp );</span><br></pre></td></tr></table></figure>
+<p>对于上面的答案， ch哥 并不满意，说那 exp2level, level2expRange 这两个方法该怎么写呢？</p>
+<p>由于并不知道 exp 是怎么分布的，假定是一堆给定点，那么可以构造数组，然后判断落在数组中哪个区间来计算</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> expRangeArray = [ <span class="number">0</span>, <span class="number">50</span>, <span class="number">100</span>, <span class="number">134</span>, <span class="number">200</span>, <span class="number">234</span>, <span class="number">300</span>, <span class="comment">/* ... */</span> ];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">exp2level</span>(<span class="params"> exp </span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> ii = expRangeArray.length,</span><br><span class="line">        i  = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>( i &lt; ii )&#123;</span><br><span class="line">        <span class="keyword">if</span>( exp &gt;= expRangeArray[ i ] &amp;&amp; exp &lt; expRangeArray[ i + <span class="number">1</span> ] )&#123;</span><br><span class="line">            <span class="keyword">return</span> i + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">level2expRange</span>(<span class="params"> level </span>)</span>&#123; <span class="comment">// 拿到这个 level 的 exp 范围</span></span><br><span class="line">    <span class="keyword">let</span> ii = expRangeArray.length,</span><br><span class="line">        i  = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>( i &lt; ii )&#123;</span><br><span class="line">        <span class="keyword">if</span>( exp &gt;= expRangeArray[ i ] &amp;&amp; exp &lt; expRangeArray[ i + <span class="number">1</span> ] )&#123;</span><br><span class="line">            <span class="keyword">return</span> [ expRangeArray[ i ], expRangeArray[ i + <span class="number">1</span> ] ];</span><br><span class="line">        &#125;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然而实际上 level 与 exp 之间应该是一条平滑曲线。按照起步升级快，后面不充钱升级越来越慢的性质，可以推断其实应该是一条抛物线:</p>
+<p><div id="canvas" style="width:500px;position:relative;margin:0 auto;border:1px dotted;"></div></p>
+<script>
+(function( box ){
+    var c = document.createElement( 'canvas' );
+    if( !c.getContext ) {
+        box.innerHTML = '<img src=""/>';
+        return;
+    }
+
+    var yMax = 300;
+
+    box.appendChild( c );
+    c.width = yMax;
+    c.height = yMax;
+
+    var cxt = c.getContext("2d");
+
+    function f(x){
+        return 0.01 * x * x;
+    }
+
+    function draw(){
+        var step = 0.5, start = 0, end = yMax;
+        cxt.moveTo( 0, yMax );
+        while( start < end ){
+            cxt.lineTo( start, yMax - f( start ) );
+            start += step;
+        }
+    }
+    draw();
+
+    cxt.fillText("Zem",yMax - 100,20);
+
+    cxt.moveTo( 145, yMax );
+    cxt.lineTo( 145, 0 );
+
+    cxt.moveTo( 130, yMax );
+    cxt.lineTo( 130, yMax - 10 );
+    cxt.fillText("Ln",120,yMax-20);
+
+    cxt.moveTo( 160, yMax );
+    cxt.lineTo( 160, yMax - 10 );
+    cxt.fillText("Ln+1",160,yMax-20);
+
+    cxt.moveTo( 0, 0 );
+    cxt.lineTo( 0, yMax );
+    cxt.lineTo( yMax, yMax );
+
+    cxt.font="16px Georgia";
+    cxt.fillText("Exp",10,50);
+    cxt.fillText("Level",250,260);
+
+
+
+    cxt.stroke();
+})( document.getElementById( 'canvas' ) );
+
+</script>
+
+<p>突然间就回到高中的平面几何，求交点的问题了。</p>
+<p>当手头有一个确定的经验值 exp，我们可以做一条 y = exp 的直线，求出与 level - exp 曲线的交点，再定位到 y = exp 与 x = 0 两个线的交点。</p>
+<p>由于 level 值必然为整数，那么就可以拿到当前 level 所在的区间。</p>
+<p>根据上面得到的 level 区间， level - exp 曲线，就可以方便算出当前等级的进度条了：</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/necuti/embed?js,output" target="_blank" rel="external">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zemzheng.ziey.info/2016/05/11/calculate-level-experience-and-show/" data-id="cio32f6zd00004kabde765w2y" class="article-share-link">Share</a>
+      
+        <a href="http://zemzheng.ziey.info/2016/05/11/calculate-level-experience-and-show/#disqus_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/09/react-lifecycle/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">react lifecycle</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/babel/">babel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/config/">config</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cookbook/">cookbook</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gvim/">gvim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/lifecycle/">lifecycle</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shell/">shell</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/babel/" style="font-size: 10px;">babel</a> <a href="/tags/config/" style="font-size: 10px;">config</a> <a href="/tags/cookbook/" style="font-size: 20px;">cookbook</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gvim/" style="font-size: 10px;">gvim</a> <a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/lifecycle/" style="font-size: 10px;">lifecycle</a> <a href="/tags/react/" style="font-size: 15px;">react</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/11/calculate-level-experience-and-show/">通过经验值来计算和显示level条</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/09/react-lifecycle/">react lifecycle</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/04/vim-guide/">Vim 相关指导资料收集</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/04/git-cookbook/">git cookbook</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/04/shell-cookbook/">shell cookbook</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Zem Zheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'zemzheng';
+  
+  var disqus_url = 'http://zemzheng.ziey.info/2016/05/11/calculate-level-experience-and-show/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

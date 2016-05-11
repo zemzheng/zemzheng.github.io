@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zemzheng.ziey.info/"/>
-  <updated>2016-05-04T06:13:15.973Z</updated>
+  <updated>2016-05-11T16:12:20.220Z</updated>
   <id>http://zemzheng.ziey.info/</id>
   
   <author>
@@ -16,11 +16,132 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>通过经验值来计算和显示level条</title>
+    <link href="http://zemzheng.ziey.info/2016/05/11/calculate-level-experience-and-show/"/>
+    <id>http://zemzheng.ziey.info/2016/05/11/calculate-level-experience-and-show/</id>
+    <published>2016-05-11T05:51:03.000Z</published>
+    <updated>2016-05-11T16:12:20.220Z</updated>
+    
+    <content type="html">&lt;p&gt;早上跟 ch哥 在班车上闲聊，说到在游戏里面，如何根据一个经验值，显示当前用户的等级 Level，并且显示当前 Level 下距离下一级别的进度百分比。&lt;/p&gt;
+&lt;p&gt;ch哥 说要是让你做，怎么搞？&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt; 
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;exp2level&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; exp &lt;/span&gt;)&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;// 得到 exp 对应的 level&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;/* ... */&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;level2expRange&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; level &lt;/span&gt;)&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;// 拿到这个 level 的 exp 范围&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;/* ... */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;exp2width&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; exp &lt;/span&gt;)&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;// 根据 exp 拿到 Level 进度条宽度百分比&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; width;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; expRange = level2expRange( exp );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;( expRange[ &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; ] == expRange[ &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; ] )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        width = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        width = ( exp - expRange[ &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; ] ) / ( expRange[ &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; ] - expRange[ &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; ] );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; width;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 所以当 exp 已知，有：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; level = exp2level( exp );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; width = exp2width( exp );&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;对于上面的答案， ch哥 并不满意，说那 exp2level, level2expRange 这两个方法该怎么写呢？&lt;/p&gt;
+&lt;p&gt;由于并不知道 exp 是怎么分布的，假定是一堆给定点，那么可以构造数组，然后判断落在数组中哪个区间来计算&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; expRangeArray = [ &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;50&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;134&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;234&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;300&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;/* ... */&lt;/span&gt; ];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;exp2level&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; exp &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; ii = expRangeArray.length,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        i  = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( i &amp;lt; ii )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;( exp &amp;gt;= expRangeArray[ i ] &amp;amp;&amp;amp; exp &amp;lt; expRangeArray[ i + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; ] )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; i + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        i++;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;level2expRange&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; level &lt;/span&gt;)&lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;// 拿到这个 level 的 exp 范围&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; ii = expRangeArray.length,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        i  = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( i &amp;lt; ii )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;( exp &amp;gt;= expRangeArray[ i ] &amp;amp;&amp;amp; exp &amp;lt; expRangeArray[ i + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; ] )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; [ expRangeArray[ i ], expRangeArray[ i + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; ] ];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        i++;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然而实际上 level 与 exp 之间应该是一条平滑曲线。按照起步升级快，后面不充钱升级越来越慢的性质，可以推断其实应该是一条抛物线:&lt;/p&gt;
+&lt;p&gt;&lt;div id=&quot;canvas&quot; style=&quot;width:500px;position:relative;margin:0 auto;border:1px dotted;&quot;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;script&gt;
+(function( box ){
+    var c = document.createElement( &#39;canvas&#39; );
+    if( !c.getContext ) {
+        box.innerHTML = &#39;&lt;img src=&quot;&quot;/&gt;&#39;;
+        return;
+    }
+
+    var yMax = 300;
+
+    box.appendChild( c );
+    c.width = yMax;
+    c.height = yMax;
+
+    var cxt = c.getContext(&quot;2d&quot;);
+
+    function f(x){
+        return 0.01 * x * x;
+    }
+
+    function draw(){
+        var step = 0.5, start = 0, end = yMax;
+        cxt.moveTo( 0, yMax );
+        while( start &lt; end ){
+            cxt.lineTo( start, yMax - f( start ) );
+            start += step;
+        }
+    }
+    draw();
+
+    cxt.fillText(&quot;Zem&quot;,yMax - 100,20);
+
+    cxt.moveTo( 145, yMax );
+    cxt.lineTo( 145, 0 );
+
+    cxt.moveTo( 130, yMax );
+    cxt.lineTo( 130, yMax - 10 );
+    cxt.fillText(&quot;Ln&quot;,120,yMax-20);
+
+    cxt.moveTo( 160, yMax );
+    cxt.lineTo( 160, yMax - 10 );
+    cxt.fillText(&quot;Ln+1&quot;,160,yMax-20);
+
+    cxt.moveTo( 0, 0 );
+    cxt.lineTo( 0, yMax );
+    cxt.lineTo( yMax, yMax );
+
+    cxt.font=&quot;16px Georgia&quot;;
+    cxt.fillText(&quot;Exp&quot;,10,50);
+    cxt.fillText(&quot;Level&quot;,250,260);
+
+
+
+    cxt.stroke();
+})( document.getElementById( &#39;canvas&#39; ) );
+
+&lt;/script&gt;
+
+&lt;p&gt;突然间就回到高中的平面几何，求交点的问题了。&lt;/p&gt;
+&lt;p&gt;当手头有一个确定的经验值 exp，我们可以做一条 y = exp 的直线，求出与 level - exp 曲线的交点，再定位到 y = exp 与 x = 0 两个线的交点。&lt;/p&gt;
+&lt;p&gt;由于 level 值必然为整数，那么就可以拿到当前 level 所在的区间。&lt;/p&gt;
+&lt;p&gt;根据上面得到的 level 区间， level - exp 曲线，就可以方便算出当前等级的进度条了：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;jsbin-embed&quot; href=&quot;http://jsbin.com/necuti/embed?js,output&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JS Bin on jsbin.com&lt;/a&gt;&lt;script src=&quot;http://static.jsbin.com/js/embed.min.js?3.35.12&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;早上跟 ch哥 在班车上闲聊，说到在游戏里面，如何根据一个经验值，显示当前用户的等级 Level，并且显示当前 Level 下距离下一级别的进度百分比。&lt;/p&gt;
+&lt;p&gt;ch哥 说要是让你做，怎么搞？&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://zemzheng.ziey.info/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>react lifecycle</title>
+    <link href="http://zemzheng.ziey.info/2016/05/09/react-lifecycle/"/>
+    <id>http://zemzheng.ziey.info/2016/05/09/react-lifecycle/</id>
+    <published>2016-05-09T05:38:55.000Z</published>
+    <updated>2016-05-11T14:52:43.209Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;lifecycle-生命周期调用顺序&quot;&gt;&lt;a href=&quot;#lifecycle-生命周期调用顺序&quot; class=&quot;headerlink&quot; title=&quot;lifecycle 生命周期调用顺序&quot;&gt;&lt;/a&gt;lifecycle 生命周期调用顺序&lt;/h3&gt;&lt;img src=&quot;/2016/05/09/react-lifecycle/single.png&quot; alt=&quot;单个 React 组件的生命周期&quot; title=&quot;单个 React 组件的生命周期&quot;&gt;
+&lt;p&gt;附DEMO：&lt;br&gt;&lt;a class=&quot;jsbin-embed&quot; href=&quot;http://jsbin.com/poravu/embed?console,output&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JS Bin on jsbin.com&lt;/a&gt;&lt;script src=&quot;http://static.jsbin.com/js/embed.min.js?3.35.12&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;h3 id=&quot;父子组件生命周期的&quot;&gt;&lt;a href=&quot;#父子组件生命周期的&quot; class=&quot;headerlink&quot; title=&quot;父子组件生命周期的&quot;&gt;&lt;/a&gt;父子组件生命周期的&lt;/h3&gt;&lt;p&gt;接下来来考虑父子组件嵌套，先给出DEMO：&lt;br&gt;&lt;a class=&quot;jsbin-embed&quot; href=&quot;http://jsbin.com/zuqexo/embed?console,output&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Lifecycle Between Parent and Child on jsbin.com&lt;/a&gt;&lt;script src=&quot;http://static.jsbin.com/js/embed.min.js?3.35.12&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;先点击 Change Tips 按钮&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;lifecycle-生命周期调用顺序&quot;&gt;&lt;a href=&quot;#lifecycle-生命周期调用顺序&quot; class=&quot;headerlink&quot; title=&quot;lifecycle 生命周期调用顺序&quot;&gt;&lt;/a&gt;lifecycle 生命周期调用顺序&lt;/h3&gt;&lt;img src=
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://zemzheng.ziey.info/tags/javascript/"/>
+    
+      <category term="react" scheme="http://zemzheng.ziey.info/tags/react/"/>
+    
+      <category term="lifecycle" scheme="http://zemzheng.ziey.info/tags/lifecycle/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vim 相关指导资料收集</title>
     <link href="http://zemzheng.ziey.info/2016/05/04/vim-guide/"/>
     <id>http://zemzheng.ziey.info/2016/05/04/vim-guide/</id>
     <published>2016-05-04T06:10:18.000Z</published>
-    <updated>2016-05-04T06:13:15.973Z</updated>
+    <updated>2016-05-08T16:01:21.013Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Vim 相关资料&lt;/p&gt;
@@ -73,7 +194,7 @@
     <link href="http://zemzheng.ziey.info/2016/05/04/git-cookbook/"/>
     <id>http://zemzheng.ziey.info/2016/05/04/git-cookbook/</id>
     <published>2016-05-04T05:55:32.000Z</published>
-    <updated>2016-05-04T06:00:37.213Z</updated>
+    <updated>2016-05-08T16:01:21.003Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;更新本地代码&lt;/li&gt;
@@ -146,7 +267,7 @@
     <link href="http://zemzheng.ziey.info/2016/05/04/shell-cookbook/"/>
     <id>http://zemzheng.ziey.info/2016/05/04/shell-cookbook/</id>
     <published>2016-05-04T05:50:09.000Z</published>
-    <updated>2016-05-04T05:53:22.962Z</updated>
+    <updated>2016-05-08T16:01:21.010Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;等待输入&lt;/li&gt;
@@ -380,7 +501,7 @@
     <link href="http://zemzheng.ziey.info/2016/05/04/how-to-config-babel6.x/"/>
     <id>http://zemzheng.ziey.info/2016/05/04/how-to-config-babel6.x/</id>
     <published>2016-05-04T05:45:44.000Z</published>
-    <updated>2016-05-04T05:47:37.955Z</updated>
+    <updated>2016-05-08T16:01:21.006Z</updated>
     
     <content type="html">&lt;h1 id=&quot;Babel&quot;&gt;&lt;a href=&quot;#Babel&quot; class=&quot;headerlink&quot; title=&quot;Babel&quot;&gt;&lt;/a&gt;Babel&lt;/h1&gt;&lt;p&gt;我们使用 &lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Babel&lt;/a&gt; 来将 ES6/7 或者 React 的语法编译成当前浏览器可以执行的代码&lt;/p&gt;
 &lt;h2 id=&quot;Preset-and-Plugin&quot;&gt;&lt;a href=&quot;#Preset-and-Plugin&quot; class=&quot;headerlink&quot; title=&quot;Preset and Plugin&quot;&gt;&lt;/a&gt;Preset and Plugin&lt;/h2&gt;&lt;p&gt;Babel 将各种语法特性的编译放在 Plugin 的中处理&lt;/p&gt;
@@ -419,7 +540,7 @@
     <link href="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/"/>
     <id>http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/</id>
     <published>2016-05-04T05:29:41.000Z</published>
-    <updated>2016-05-04T05:43:28.120Z</updated>
+    <updated>2016-05-08T16:01:21.000Z</updated>
     
     <content type="html">&lt;p&gt;# &lt;/p&gt;
 &lt;h1 id=&quot;String&quot;&gt;&lt;a href=&quot;#String&quot; class=&quot;headerlink&quot; title=&quot;String&quot;&gt;&lt;/a&gt;String&lt;/h1&gt;&lt;ul&gt;
