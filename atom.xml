@@ -113,9 +113,10 @@
     <link href="http://zemzheng.ziey.info/2016/05/09/react-lifecycle/"/>
     <id>http://zemzheng.ziey.info/2016/05/09/react-lifecycle/</id>
     <published>2016-05-09T05:38:55.000Z</published>
-    <updated>2016-05-11T14:52:43.209Z</updated>
+    <updated>2016-05-11T16:16:42.212Z</updated>
     
     <content type="html">&lt;h3 id=&quot;lifecycle-生命周期调用顺序&quot;&gt;&lt;a href=&quot;#lifecycle-生命周期调用顺序&quot; class=&quot;headerlink&quot; title=&quot;lifecycle 生命周期调用顺序&quot;&gt;&lt;/a&gt;lifecycle 生命周期调用顺序&lt;/h3&gt;&lt;img src=&quot;/2016/05/09/react-lifecycle/single.png&quot; alt=&quot;单个 React 组件的生命周期&quot; title=&quot;单个 React 组件的生命周期&quot;&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;附DEMO：&lt;br&gt;&lt;a class=&quot;jsbin-embed&quot; href=&quot;http://jsbin.com/poravu/embed?console,output&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JS Bin on jsbin.com&lt;/a&gt;&lt;script src=&quot;http://static.jsbin.com/js/embed.min.js?3.35.12&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;h3 id=&quot;父子组件生命周期的&quot;&gt;&lt;a href=&quot;#父子组件生命周期的&quot; class=&quot;headerlink&quot; title=&quot;父子组件生命周期的&quot;&gt;&lt;/a&gt;父子组件生命周期的&lt;/h3&gt;&lt;p&gt;接下来来考虑父子组件嵌套，先给出DEMO：&lt;br&gt;&lt;a class=&quot;jsbin-embed&quot; href=&quot;http://jsbin.com/zuqexo/embed?console,output&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Lifecycle Between Parent and Child on jsbin.com&lt;/a&gt;&lt;script src=&quot;http://static.jsbin.com/js/embed.min.js?3.35.12&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;先点击 Change Tips 按钮&lt;/p&gt;
@@ -123,7 +124,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;lifecycle-生命周期调用顺序&quot;&gt;&lt;a href=&quot;#lifecycle-生命周期调用顺序&quot; class=&quot;headerlink&quot; title=&quot;lifecycle 生命周期调用顺序&quot;&gt;&lt;/a&gt;lifecycle 生命周期调用顺序&lt;/h3&gt;&lt;img src=
+      &lt;h3 id=&quot;lifecycle-生命周期调用顺序&quot;&gt;&lt;a href=&quot;#lifecycle-生命周期调用顺序&quot; class=&quot;headerlink&quot; title=&quot;lifecycle 生命周期调用顺序&quot;&gt;&lt;/a&gt;lifecycle 生命周期调用顺序&lt;/h3&gt;&lt;img src=&quot;/2016/05/09/react-lifecycle/single.png&quot; alt=&quot;单个 React 组件的生命周期&quot; title=&quot;单个 React 组件的生命周期&quot;&gt;
     
     </summary>
     
@@ -194,9 +195,10 @@
     <link href="http://zemzheng.ziey.info/2016/05/04/git-cookbook/"/>
     <id>http://zemzheng.ziey.info/2016/05/04/git-cookbook/</id>
     <published>2016-05-04T05:55:32.000Z</published>
-    <updated>2016-05-08T16:01:21.003Z</updated>
+    <updated>2016-05-11T16:18:42.956Z</updated>
     
-    <content type="html">&lt;ul&gt;
+    <content type="html">&lt;p&gt;一些比较有用或者好玩的方法 for git&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;更新本地代码&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git fetch -p&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git pull origin [branch]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -248,10 +250,7 @@
     
     <summary type="html">
     
-      &lt;ul&gt;
-&lt;li&gt;更新本地代码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;
+      &lt;p&gt;一些比较有用或者好玩的方法 for git&lt;br&gt;
     
     </summary>
     
@@ -267,9 +266,10 @@
     <link href="http://zemzheng.ziey.info/2016/05/04/shell-cookbook/"/>
     <id>http://zemzheng.ziey.info/2016/05/04/shell-cookbook/</id>
     <published>2016-05-04T05:50:09.000Z</published>
-    <updated>2016-05-08T16:01:21.010Z</updated>
+    <updated>2016-05-11T16:18:42.971Z</updated>
     
-    <content type="html">&lt;ul&gt;
+    <content type="html">&lt;p&gt;一些比较有用或者好玩的方法 for shell&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;等待输入&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 让用户输入一个字符来表示是否进行某个操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# http://stackoverflow.com/questions/1885525/how-do-i-prompt-a-user-for-confirmation-in-bash-script&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;read&lt;/span&gt; -p &lt;span class=&quot;string&quot;&gt;&quot;Are you sure? &quot;&lt;/span&gt; -n 1 -r&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# -n &amp;lt;num&amp;gt; 可以输入多少字符&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt;    &lt;span class=&quot;comment&quot;&gt;# (optional) move to a new line&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; [[ &lt;span class=&quot;variable&quot;&gt;$REPLY&lt;/span&gt; =~ ^[Yy]$ ]]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;# do something you confirm&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -482,10 +482,7 @@
     
     <summary type="html">
     
-      &lt;ul&gt;
-&lt;li&gt;等待输入&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2
+      &lt;p&gt;一些比较有用或者好玩的方法 for shell&lt;br&gt;
     
     </summary>
     
@@ -540,10 +537,10 @@
     <link href="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/"/>
     <id>http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/</id>
     <published>2016-05-04T05:29:41.000Z</published>
-    <updated>2016-05-08T16:01:21.000Z</updated>
+    <updated>2016-05-11T16:19:15.803Z</updated>
     
-    <content type="html">&lt;p&gt;# &lt;/p&gt;
-&lt;h1 id=&quot;String&quot;&gt;&lt;a href=&quot;#String&quot; class=&quot;headerlink&quot; title=&quot;String&quot;&gt;&lt;/a&gt;String&lt;/h1&gt;&lt;ul&gt;
+    <content type="html">&lt;p&gt;一些比较有用或者好玩的方法 for javascript&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;String&quot;&gt;&lt;a href=&quot;#String&quot; class=&quot;headerlink&quot; title=&quot;String&quot;&gt;&lt;/a&gt;String&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;数字千分位逗号&lt;/p&gt;
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt; s, len &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    s = (&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; len &lt;/span&gt;)&lt;/span&gt;&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ~~( s * len ) / len + &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;)( &lt;span class=&quot;built_in&quot;&gt;Math&lt;/span&gt;.pow( &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, len = len || &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ) );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    s = s.split( &lt;span class=&quot;string&quot;&gt;&#39;.&#39;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;( s.length &amp;lt; &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; ) s.push( &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( s[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;].length &amp;lt; len ) s[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] += &lt;span class=&quot;string&quot;&gt;&#39;0&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; re = &lt;span class=&quot;regexp&quot;&gt;/(\d)(\d&amp;#123;3&amp;#125;[\.,])/&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    s[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] += &lt;span class=&quot;string&quot;&gt;&#39;.&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( re.test( s[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] ) ) s[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = s[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;].replace( re, &lt;span class=&quot;string&quot;&gt;&quot;$1,$2&quot;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; s.join( &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
@@ -554,7 +551,7 @@
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; str, len, fill &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    fill = fill || &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt;( str.length &amp;lt; len )&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        str = fill + str;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; str;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;Image&quot;&gt;&lt;a href=&quot;#Image&quot; class=&quot;headerlink&quot; title=&quot;Image&quot;&gt;&lt;/a&gt;Image&lt;/h1&gt;&lt;ul&gt;
+&lt;h2 id=&quot;Image&quot;&gt;&lt;a href=&quot;#Image&quot; class=&quot;headerlink&quot; title=&quot;Image&quot;&gt;&lt;/a&gt;Image&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;image 转 data-url&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 浏览器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;image2dataurl&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt; img &lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; c = &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.createElement(&lt;span class=&quot;string&quot;&gt;&quot;canvas&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    c.width  = img.width;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    c.height = img.height;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    c.getContext(&lt;span class=&quot;string&quot;&gt;&quot;2d&quot;&lt;/span&gt;).drawImage( img, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; c.toDataURL();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 使用方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; dataurl = image2dataurl( img );&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -566,10 +563,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;# &lt;/p&gt;
-&lt;h1 id=&quot;String&quot;&gt;&lt;a href=&quot;#String&quot; class=&quot;headerlink&quot; title=&quot;String&quot;&gt;&lt;/a&gt;String&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;数字千分位逗号&lt;/p&gt;
-&lt;figure class=&quot;highligh
+      &lt;p&gt;一些比较有用或者好玩的方法 for javascript&lt;br&gt;
     
     </summary>
     

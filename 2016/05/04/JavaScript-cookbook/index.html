@@ -5,25 +5,16 @@
   
   <title>JavaScript - cookbook | Ziey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="# 
-String
-数字千分位逗号
-123456789101112131415function ( s, len )&amp;#123;    s = (function( len )&amp;#123;             return ~~( s * len ) / len + &apos;&apos;            &amp;#125;)( Math.pow( 10, len = len || 2 ) );    s =">
+  <meta name="description" content="一些比较有用或者好玩的方法 for javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript - cookbook">
 <meta property="og:url" content="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/index.html">
 <meta property="og:site_name" content="Ziey">
-<meta property="og:description" content="# 
-String
-数字千分位逗号
-123456789101112131415function ( s, len )&amp;#123;    s = (function( len )&amp;#123;             return ~~( s * len ) / len + &apos;&apos;            &amp;#125;)( Math.pow( 10, len = len || 2 ) );    s =">
-<meta property="og:updated_time" content="2016-05-08T16:01:21.000Z">
+<meta property="og:description" content="一些比较有用或者好玩的方法 for javascript">
+<meta property="og:updated_time" content="2016-05-11T16:19:15.803Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript - cookbook">
-<meta name="twitter:description" content="# 
-String
-数字千分位逗号
-123456789101112131415function ( s, len )&amp;#123;    s = (function( len )&amp;#123;             return ~~( s * len ) / len + &apos;&apos;            &amp;#125;)( Math.pow( 10, len = len || 2 ) );    s =">
+<meta name="twitter:description" content="一些比较有用或者好玩的方法 for javascript">
   
     <link rel="alternate" href="/atom.xml" title="Ziey" type="application/atom+xml">
   
@@ -98,8 +89,8 @@ String
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p># </p>
-<h1 id="String"><a href="#String" class="headerlink" title="String"></a>String</h1><ul>
+        <p>一些比较有用或者好玩的方法 for javascript<br><a id="more"></a></p>
+<h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><ul>
 <li><p>数字千分位逗号</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params"> s, len </span>)</span>&#123;</span><br><span class="line">    s = (<span class="function"><span class="keyword">function</span>(<span class="params"> len </span>)</span>&#123; </span><br><span class="line">            <span class="keyword">return</span> ~~( s * len ) / len + <span class="string">''</span></span><br><span class="line">            &#125;)( <span class="built_in">Math</span>.pow( <span class="number">10</span>, len = len || <span class="number">2</span> ) );</span><br><span class="line"></span><br><span class="line">    s = s.split( <span class="string">'.'</span> );</span><br><span class="line">    <span class="keyword">if</span>( s.length &lt; <span class="number">2</span> ) s.push( <span class="string">''</span> );</span><br><span class="line">    <span class="keyword">while</span>( s[<span class="number">1</span>].length &lt; len ) s[<span class="number">1</span>] += <span class="string">'0'</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> re = <span class="regexp">/(\d)(\d&#123;3&#125;[\.,])/</span>;</span><br><span class="line">    s[<span class="number">0</span>] += <span class="string">'.'</span>;</span><br><span class="line">    <span class="keyword">while</span>( re.test( s[<span class="number">0</span>] ) ) s[<span class="number">0</span>] = s[<span class="number">0</span>].replace( re, <span class="string">"$1,$2"</span> );</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> s.join( <span class="string">''</span> );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -110,7 +101,7 @@ String
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params"> str, len, fill </span>)</span>&#123;</span><br><span class="line">    fill = fill || <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>( str.length &lt; len )&#123;</span><br><span class="line">        str = fill + str;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h1 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h1><ul>
+<h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><ul>
 <li>image 转 data-url</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 浏览器</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">image2dataurl</span>(<span class="params"> img </span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = <span class="built_in">document</span>.createElement(<span class="string">"canvas"</span>);</span><br><span class="line">    c.width  = img.width;</span><br><span class="line">    c.height = img.height;</span><br><span class="line">    c.getContext(<span class="string">"2d"</span>).drawImage( img, <span class="number">0</span>, <span class="number">0</span> );</span><br><span class="line">    <span class="keyword">return</span> c.toDataURL();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用方法</span></span><br><span class="line"><span class="keyword">var</span> dataurl = image2dataurl( img );</span><br></pre></td></tr></table></figure>
@@ -122,7 +113,7 @@ String
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/" data-id="cio32f6zy00014kabg20j4ube" class="article-share-link">Share</a>
+      <a data-url="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/" data-id="cio32nm5i0000x4abo8hevoy3" class="article-share-link">Share</a>
       
         <a href="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/#disqus_thread" class="article-comment-link">留言</a>
       

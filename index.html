@@ -100,7 +100,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zemzheng.ziey.info/2016/05/11/calculate-level-experience-and-show/" data-id="cio32f6zd00004kabde765w2y" class="article-share-link">Share</a>
+      <a data-url="http://zemzheng.ziey.info/2016/05/11/calculate-level-experience-and-show/" data-id="cio32nm5y0003x4abllxapajq" class="article-share-link">Share</a>
       
         <a href="http://zemzheng.ziey.info/2016/05/11/calculate-level-experience-and-show/#disqus_thread" class="article-comment-link">留言</a>
       
@@ -137,14 +137,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="lifecycle-生命周期调用顺序"><a href="#lifecycle-生命周期调用顺序" class="headerlink" title="lifecycle 生命周期调用顺序"></a>lifecycle 生命周期调用顺序</h3><img src="/2016/05/09/react-lifecycle/single.png" alt="单个 React 组件的生命周期" title="单个 React 组件的生命周期">
-<p>附DEMO：<br><a class="jsbin-embed" href="http://jsbin.com/poravu/embed?console,output" target="_blank" rel="external">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script></p>
-<h3 id="父子组件生命周期的"><a href="#父子组件生命周期的" class="headerlink" title="父子组件生命周期的"></a>父子组件生命周期的</h3><p>接下来来考虑父子组件嵌套，先给出DEMO：<br><a class="jsbin-embed" href="http://jsbin.com/zuqexo/embed?console,output" target="_blank" rel="external">Lifecycle Between Parent and Child on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script></p>
-<p>先点击 Change Tips 按钮</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2016/05/09/react-lifecycle/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zemzheng.ziey.info/2016/05/09/react-lifecycle/" data-id="cio32f6zz00064kabg7vw0dti" class="article-share-link">Share</a>
+      <a data-url="http://zemzheng.ziey.info/2016/05/09/react-lifecycle/" data-id="cio32nm5y0006x4abgjjtdai1" class="article-share-link">Share</a>
       
         <a href="http://zemzheng.ziey.info/2016/05/09/react-lifecycle/#disqus_thread" class="article-comment-link">留言</a>
       
@@ -212,7 +213,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zemzheng.ziey.info/2016/05/04/vim-guide/" data-id="cio32f70f00094kabhwp1wi5x" class="article-share-link">Share</a>
+      <a data-url="http://zemzheng.ziey.info/2016/05/04/vim-guide/" data-id="cio32nm6e0008x4ab4y7r6i6u" class="article-share-link">Share</a>
       
         <a href="http://zemzheng.ziey.info/2016/05/04/vim-guide/#disqus_thread" class="article-comment-link">留言</a>
       
@@ -248,59 +249,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>更新本地代码</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git fetch -p</span><br><span class="line">git pull origin [branch]</span><br></pre></td></tr></table></figure>
-<ul>
-<li>获取远程分支的信息</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote show origin</span><br></pre></td></tr></table></figure>
-<ul>
-<li>拉分支</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b feature.desc.160305 <span class="comment"># 以当前分支为基础，拉出分支feature.desc.160305</span></span><br><span class="line">git checkout -b [branch] [remotename]/[branch] <span class="comment"># 远程拉取分支并本地跟踪</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>分支信息</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -vv <span class="comment"># 显示各分支信息</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>删除远程分支</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --delete [branch]</span><br></pre></td></tr></table></figure>
-<ul>
-<li>推送分支</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git push origin head <span class="comment"># 目前后台使用该命令会出错</span></span><br><span class="line">git push origin <span class="variable">$branch</span> <span class="comment"># 后台使用的版本支持</span></span><br><span class="line">如果出现失败，可以尝试先pull</span><br><span class="line">git pull origin [branch]</span><br></pre></td></tr></table></figure>
-<ul>
-<li>打tag</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git tag 20160305</span><br><span class="line">git push origin [tag]   <span class="comment"># push tag到远端</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>对比差异</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git diff    <span class="comment"># 显示还未暂存的改动</span></span><br><span class="line">git diff --staged <span class="comment"># 显示当前和上次提交之间的差异</span></span><br><span class="line">git diff master --name-only -- xxx <span class="comment"># 当前分支和master对比xxx目录下的有差异文件列表，注意参数顺序</span></span><br><span class="line">git diff 20160229 --name-only <span class="comment"># 当前分支与tag 20160229 进行对比</span></span><br><span class="line">git diff head head^ --name-only --diff-filter=AM <span class="comment"># 列出两个提交点的新增及修改文件</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>拿到当前的 hash 值</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span> --pretty=%H -n 1</span><br></pre></td></tr></table></figure>
-<ul>
-<li>git 配置</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global <span class="_">-l</span></span><br><span class="line">git config --global --add user.name yourname</span><br><span class="line">git config --global --unset user.name </span><br><span class="line"><span class="comment"># 命令中带了--global参数，这就意味是在进行全局配置,它会影响本机上的每个一个Git项目.</span></span><br><span class="line"><span class="comment"># Git的全局配置文件是存放在~/.gitconfig（用户目录下的.gitconfig）文件中,项目配置文件是存放在Git项目所在目录的.git/config文件中,可自由添加</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>git 回滚 </li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 场景1:当你改乱了工作区某个文件的内容,想直接丢弃工作区的修改时,用命令</span></span><br><span class="line">git checkout -- file.  </span><br><span class="line"></span><br><span class="line"><span class="comment"># 场景2:当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步</span></span><br><span class="line"><span class="comment"># 第一步用命令</span></span><br><span class="line">git reset HEAD file <span class="comment"># 回到了场景1，第二步按场景1操作 </span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 场景3:已经提交了不合适的修改到版本库时，想要撤销本次提交，不过前提是没有推送到远程库。</span></span><br><span class="line"><span class="comment"># HEAD指向的版本就是当前版本，因此，Git允许在版本的历史之间穿梭，使用命令</span></span><br><span class="line">git reset --hard commit_id </span><br><span class="line"><span class="comment"># 向前回滚,用git log可以查看提交历史，以便确定要回退到哪个版本。</span></span><br><span class="line"><span class="comment"># 向后用git reflog查看命令历史，以便确定要回到未来的哪个版本。</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>打一个更新包</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">branch=<span class="string">"master"</span>                                              <span class="comment"># 要打包的分支 master 或者 develop</span></span><br><span class="line">to=<span class="string">"head"</span>                                                    <span class="comment"># 更新到目标点</span></span><br><span class="line">from=<span class="string">"head^"</span>                                                 <span class="comment"># 上一个更新点</span></span><br><span class="line">git checkout <span class="variable">$branch</span>                                         <span class="comment"># master 或者 release</span></span><br><span class="line">pkg=<span class="string">"/data/release/cms-<span class="variable">$&#123;branch&#125;</span>-<span class="variable">$( date +"%Y%m%d-%s" )</span>.tgz"</span> <span class="comment"># 更新包名称</span></span><br><span class="line">git checkout <span class="variable">$targetBranch</span></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> $( git diff <span class="variable">$fromBranch</span> <span class="variable">$targetBranch</span> --name-only --diff-filter=AM ); <span class="keyword">do</span></span><br><span class="line">    tar -rzf <span class="variable">$pkg</span> <span class="variable">$f</span></span><br><span class="line"><span class="keyword">done</span>;</span><br><span class="line">git checkout -</span><br></pre></td></tr></table></figure>
-
+        <p>一些比较有用或者好玩的方法 for git<br>
+        
+          <p class="article-more-link">
+            <a href="/2016/05/04/git-cookbook/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zemzheng.ziey.info/2016/05/04/git-cookbook/" data-id="cio32f6zz00034kablgfq8pxw" class="article-share-link">Share</a>
+      <a data-url="http://zemzheng.ziey.info/2016/05/04/git-cookbook/" data-id="cio32nm5y0001x4ab016oh2dn" class="article-share-link">Share</a>
       
         <a href="http://zemzheng.ziey.info/2016/05/04/git-cookbook/#disqus_thread" class="article-comment-link">留言</a>
       
@@ -336,220 +294,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>等待输入</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 让用户输入一个字符来表示是否进行某个操作</span></span><br><span class="line"><span class="comment"># http://stackoverflow.com/questions/1885525/how-do-i-prompt-a-user-for-confirmation-in-bash-script</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="built_in">read</span> -p <span class="string">"Are you sure? "</span> -n 1 -r</span><br><span class="line"><span class="comment"># -n &lt;num&gt; 可以输入多少字符</span></span><br><span class="line"><span class="built_in">echo</span>    <span class="comment"># (optional) move to a new line</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="variable">$REPLY</span> =~ ^[Yy]$ ]]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="comment"># do something you confirm</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>echo 输出颜色<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 设置接下来的输出颜色</span></span><br><span class="line"><span class="built_in">echo</span> <span class="_">-e</span> <span class="string">"\033[&lt;F&gt;;&lt;B&gt;m"</span></span><br><span class="line"><span class="built_in">echo</span> <span class="_">-e</span> <span class="string">"\e[&lt;F&gt;;&lt;B&gt;m"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># \033[&lt;F&gt;;&lt;B&gt;m</span></span><br><span class="line"><span class="comment"># \e[&lt;F&gt;;&lt;B&gt;m</span></span><br><span class="line"><span class="comment"># &lt;F&gt; 文字颜色</span></span><br><span class="line"><span class="comment"># &lt;B&gt; 背景颜色</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>&lt;F&gt;</th>
-<th>&lt;B&gt;</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>30</td>
-<td>40</td>
-<td>黑色</td>
-</tr>
-<tr>
-<td>31</td>
-<td>41</td>
-<td>红色</td>
-</tr>
-<tr>
-<td>32</td>
-<td>42</td>
-<td>绿色</td>
-</tr>
-<tr>
-<td>33</td>
-<td>43</td>
-<td>黄色</td>
-</tr>
-<tr>
-<td>34</td>
-<td>44</td>
-<td>蓝色</td>
-</tr>
-<tr>
-<td>35</td>
-<td>45</td>
-<td>紫红色</td>
-</tr>
-<tr>
-<td>36</td>
-<td>46</td>
-<td>青蓝色</td>
-</tr>
-<tr>
-<td>37</td>
-<td>47</td>
-<td>白色</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>date 输出指定的格式</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">date +<span class="string">'%s'</span></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>格式</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>%%</td>
-<td>a literal %</td>
-</tr>
-<tr>
-<td>%a</td>
-<td>locale’s abbreviated weekday name (Sun..Sat)</td>
-</tr>
-<tr>
-<td>%A</td>
-<td>locale’s full weekday name, variable length (Sunday..Saturday)</td>
-</tr>
-<tr>
-<td>%b</td>
-<td>locale’s abbreviated month name (Jan..Dec)</td>
-</tr>
-<tr>
-<td>%B</td>
-<td>locale’s full month name, variable length (January..December)</td>
-</tr>
-<tr>
-<td>%c</td>
-<td>locale’s date and time (Sat Nov 04 12:02:33 EST 1989)</td>
-</tr>
-<tr>
-<td>%d</td>
-<td>day of month (01..31)</td>
-</tr>
-<tr>
-<td>%D</td>
-<td>date (mm/dd/yy)</td>
-</tr>
-<tr>
-<td>%e</td>
-<td>day of month, blank padded ( 1..31)</td>
-</tr>
-<tr>
-<td>%h</td>
-<td>same as %b</td>
-</tr>
-<tr>
-<td>%H</td>
-<td>hour (00..23)</td>
-</tr>
-<tr>
-<td>%I</td>
-<td>hour (01..12)</td>
-</tr>
-<tr>
-<td>%j</td>
-<td>day of year (001..366)</td>
-</tr>
-<tr>
-<td>%k</td>
-<td>hour ( 0..23)</td>
-</tr>
-<tr>
-<td>%l</td>
-<td>hour ( 1..12)</td>
-</tr>
-<tr>
-<td>%m</td>
-<td>month (01..12)</td>
-</tr>
-<tr>
-<td>%M</td>
-<td>minute (00..59)</td>
-</tr>
-<tr>
-<td>%n</td>
-<td>a newline</td>
-</tr>
-<tr>
-<td>%p</td>
-<td>locale’s AM or PM</td>
-</tr>
-<tr>
-<td>%r</td>
-<td>time, 12-hour (hh:mm:ss [AP]M)</td>
-</tr>
-<tr>
-<td>%s</td>
-<td>seconds since 00:00:00, Jan 1, 1970 (a GNU extension)</td>
-</tr>
-<tr>
-<td>%S</td>
-<td>second (00..60)</td>
-</tr>
-<tr>
-<td>%t</td>
-<td>a horizontal tab</td>
-</tr>
-<tr>
-<td>%T</td>
-<td>time, 24-hour (hh:mm:ss)</td>
-</tr>
-<tr>
-<td>%U</td>
-<td>week number of year with Sunday as first day of week (00..53)</td>
-</tr>
-<tr>
-<td>%V</td>
-<td>week number of year with Monday as first day of week (01..52)</td>
-</tr>
-<tr>
-<td>%w</td>
-<td>day of week (0..6);  0 represents Sunday</td>
-</tr>
-<tr>
-<td>%W</td>
-<td>week number of year with Monday as first day of week (00..53)</td>
-</tr>
-<tr>
-<td>%x</td>
-<td>locale’s date representation (mm/dd/yy)</td>
-</tr>
-<tr>
-<td>%X</td>
-<td>locale’s time representation (%H:%M:%S)</td>
-</tr>
-<tr>
-<td>%y</td>
-<td>last two digits of year (00..99)</td>
-</tr>
-<tr>
-<td>%Y</td>
-<td>year (1970…)</td>
-</tr>
-<tr>
-<td>%z</td>
-<td>RFC-822 style numeric timezone (-0500) (a nonstandard extension)</td>
-</tr>
-<tr>
-<td>%Z</td>
-<td>time zone (e.g., EDT), or nothing if no time zone is determinable</td>
-</tr>
-</tbody>
-</table>
-
+        <p>一些比较有用或者好玩的方法 for shell<br>
+        
+          <p class="article-more-link">
+            <a href="/2016/05/04/shell-cookbook/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zemzheng.ziey.info/2016/05/04/shell-cookbook/" data-id="cio32f6zz00084kab5g9bg0iy" class="article-share-link">Share</a>
+      <a data-url="http://zemzheng.ziey.info/2016/05/04/shell-cookbook/" data-id="cio32nm6e0007x4abtyqmehkj" class="article-share-link">Share</a>
       
         <a href="http://zemzheng.ziey.info/2016/05/04/shell-cookbook/#disqus_thread" class="article-comment-link">留言</a>
       
@@ -604,7 +358,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zemzheng.ziey.info/2016/05/04/how-to-config-babel6.x/" data-id="cio32f6zz00044kabmoewyco2" class="article-share-link">Share</a>
+      <a data-url="http://zemzheng.ziey.info/2016/05/04/how-to-config-babel6.x/" data-id="cio32nm5y0004x4ablrpa1emb" class="article-share-link">Share</a>
       
         <a href="http://zemzheng.ziey.info/2016/05/04/how-to-config-babel6.x/#disqus_thread" class="article-comment-link">留言</a>
       
@@ -640,31 +394,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p># </p>
-<h1 id="String"><a href="#String" class="headerlink" title="String"></a>String</h1><ul>
-<li><p>数字千分位逗号</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params"> s, len </span>)</span>&#123;</span><br><span class="line">    s = (<span class="function"><span class="keyword">function</span>(<span class="params"> len </span>)</span>&#123; </span><br><span class="line">            <span class="keyword">return</span> ~~( s * len ) / len + <span class="string">''</span></span><br><span class="line">            &#125;)( <span class="built_in">Math</span>.pow( <span class="number">10</span>, len = len || <span class="number">2</span> ) );</span><br><span class="line"></span><br><span class="line">    s = s.split( <span class="string">'.'</span> );</span><br><span class="line">    <span class="keyword">if</span>( s.length &lt; <span class="number">2</span> ) s.push( <span class="string">''</span> );</span><br><span class="line">    <span class="keyword">while</span>( s[<span class="number">1</span>].length &lt; len ) s[<span class="number">1</span>] += <span class="string">'0'</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> re = <span class="regexp">/(\d)(\d&#123;3&#125;[\.,])/</span>;</span><br><span class="line">    s[<span class="number">0</span>] += <span class="string">'.'</span>;</span><br><span class="line">    <span class="keyword">while</span>( re.test( s[<span class="number">0</span>] ) ) s[<span class="number">0</span>] = s[<span class="number">0</span>].replace( re, <span class="string">"$1,$2"</span> );</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> s.join( <span class="string">''</span> );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>时间格式化</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params"> time, format </span>)</span>&#123;</span><br><span class="line">    format = format || <span class="string">'%Y 年 %m 月 %d 日'</span>;</span><br><span class="line">    <span class="keyword">var</span> d = <span class="keyword">new</span> <span class="built_in">Date</span>( time * <span class="number">1000</span> );</span><br><span class="line">    <span class="keyword">return</span> format</span><br><span class="line">        .replace( <span class="regexp">/%Y/g</span>, d.getFullYear()  )</span><br><span class="line">        .replace( <span class="regexp">/%m/g</span>, d.getMonth() + <span class="number">1</span> )</span><br><span class="line">        .replace( <span class="regexp">/%d/g</span>, d.getDate()      )</span><br><span class="line">        .replace( <span class="regexp">/%H/g</span>, d.getHours()     )</span><br><span class="line">        .replace( <span class="regexp">/%i/g</span>, d.getMinutes()   )</span><br><span class="line">        .replace( <span class="regexp">/%s/g</span>, d.getSeconds()   )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>字符串补全</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params"> str, len, fill </span>)</span>&#123;</span><br><span class="line">    fill = fill || <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>( str.length &lt; len )&#123;</span><br><span class="line">        str = fill + str;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h1><ul>
-<li>image 转 data-url</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 浏览器</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">image2dataurl</span>(<span class="params"> img </span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = <span class="built_in">document</span>.createElement(<span class="string">"canvas"</span>);</span><br><span class="line">    c.width  = img.width;</span><br><span class="line">    c.height = img.height;</span><br><span class="line">    c.getContext(<span class="string">"2d"</span>).drawImage( img, <span class="number">0</span>, <span class="number">0</span> );</span><br><span class="line">    <span class="keyword">return</span> c.toDataURL();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用方法</span></span><br><span class="line"><span class="keyword">var</span> dataurl = image2dataurl( img );</span><br></pre></td></tr></table></figure>
-<ul>
-<li>url 转 data-url</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 浏览器</span></span><br><span class="line"><span class="comment">// 调用本页的 image2dataurl 方法</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">url2dataurl</span>(<span class="params"> url </span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>( <span class="function"><span class="keyword">function</span>(<span class="params"> resolve, reject </span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> i = <span class="keyword">new</span> Image();</span><br><span class="line">        i.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            resolve( image2dataurl( i ) );</span><br><span class="line">        &#125;;</span><br><span class="line">        i.onerror = <span class="function"><span class="keyword">function</span>(<span class="params"> e </span>)</span>&#123;</span><br><span class="line">            reject( e );</span><br><span class="line">        &#125;</span><br><span class="line">        i.src = url;</span><br><span class="line">    &#125; );</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用方法</span></span><br><span class="line"><span class="keyword">var</span> dataurl;</span><br><span class="line">url2dataurl( <span class="string">'http://to-your-image'</span> ).then(<span class="function"><span class="keyword">function</span>(<span class="params"> _dataurl </span>)</span>&#123;</span><br><span class="line">    dataurl = _dataurl;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
+        <p>一些比较有用或者好玩的方法 for javascript<br>
+        
+          <p class="article-more-link">
+            <a href="/2016/05/04/JavaScript-cookbook/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/" data-id="cio32f6zy00014kabg20j4ube" class="article-share-link">Share</a>
+      <a data-url="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/" data-id="cio32nm5i0000x4abo8hevoy3" class="article-share-link">Share</a>
       
         <a href="http://zemzheng.ziey.info/2016/05/04/JavaScript-cookbook/#disqus_thread" class="article-comment-link">留言</a>
       
